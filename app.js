@@ -22,6 +22,7 @@ const state = {
   current: null,
   meaningChoices: [],
   lock: false,
+  phase2Shown: false,
   currentClue: ""     // 1問中はclueを固定
 };
 
@@ -279,16 +280,19 @@ function onMeaningAnswer(choice){
   const correct = choice.isCorrect;
   recordResult(state.current.id, "meaning", correct);
 
-  if(correct){
-    state.score += 2;
-    state.streak += 1;
-    $("feedback").textContent = `✅ Richtig: ${state.current.display}`;
-    $("feedback").style.color = "var(--ok)";
-    markButtonsMeaning(state.current.id, choice.id);
+  if (correct) {
+  state.score += 2;
+  state.streak += 1;
+  $("feedback").textContent = `✅ Richtig: ${state.current.display}`;
+  $("feedback").style.color = "var(--ok)";
+  markButtonsMeaning(state.current.id, choice.id);
 
-    state.phase = "article";
-    state.lock = false;
-    setTimeout(render, 320);
+  // 次のフェーズへ“準備”だけして、画面は変えない
+  state.phase = "article";
+
+  // Nextで進める
+  $("btnNext").disabled = false;
+  state.lock = false;
   } else {
     state.score = Math.max(0, state.score - 1);
     state.streak = 0;
@@ -345,6 +349,7 @@ function nextItem(){
   }
 
   state.phase = "meaning";
+  state.phase2Shown = false;
   state.current = state.queue.shift();
   state.currentClue = "";              // 次の問題でclueを再抽選
   recordSeen(state.current.id);        // 「見た」を記録
@@ -381,9 +386,22 @@ async function init(){
   state.vocab = data.items;
 
   $("btnNext").addEventListener("click", () => {
-    $("btnNext").disabled = true;
-    nextItem();
-  });
+  $("btnNext").disabled = true;
+
+$("btnNext").disabled = true;
+
+  // Phase1で正解したあと（state.phase が article になっている）なら、
+  // 次は「同じ単語のPhase2」を表示する
+  if (state.phase === "article" && state.phase2Shown === false && state.done < state.target) {
+    state.phase2Shown = true;
+    render();     // ← ここでPhase2画面に切り替わる
+    return;
+  }
+
+  // それ以外は次の問題へ
+  nextItem();
+});
+
   $("btnRestart").addEventListener("click", () => startRound());
 
   startRound();
