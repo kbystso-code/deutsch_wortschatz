@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Wort-Drill (Bedeutung + Artikel)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Wort-Drill</div>
+      <div class="subtitle">Bedeutung → Artikel</div>
+    </div>
+
+    <div class="stats">
+      <div class="pill"><span id="progress">0</span>/<span id="target">20</span></div>
+      <div class="pill">Score: <span id="score">0</span></div>
+      <div class="pill">Streak: <span id="streak">0</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="phase" id="phaseLabel">Phase</div>
+      <div class="clue" id="clueText">…</div>
+
+      <div class="wordReveal" id="wordReveal" aria-hidden="true">
+        <div class="wordRevealLabel">Wort:</div>
+        <div class="wordRevealValue" id="wordRevealValue">—</div>
+      </div>
+
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+
+      <div class="choices" id="choices"></div>
+
+      <div class="actions">
+        <button class="btn secondary" id="btnRestart">Restart</button>
+        <button class="btn primary" id="btnNext" disabled>Next</button>
+      </div>
+    </section>
+
+    <section class="card small">
+      <div class="hintTitle">Hinweis</div>
+      <div class="hintText" id="hintText">
+        Tip: Lies die Beschreibung und wähle das passende Wort. Danach wähle den richtigen Artikel (der/die/das).
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
