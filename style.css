@@ -143,3 +143,25 @@ body{
 
 .hintTitle{font-weight:900; color:var(--muted)}
 .hintText{margin-top:8px; color:var(--muted); line-height:1.4}
+
+.levelbar{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.lvlBtn{
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(17,27,46,0.35);
+  color: var(--muted);
+  font-weight: 850;
+  cursor:pointer;
+}
+
+.lvlBtn.active{
+  background: rgba(32,52,93,0.70);
+  color: var(--text);
+}

@@ -1,6 +1,14 @@
 // app.js
 const TARGET_SETS = 20;
 
+const LEVEL_FILES = {
+  1: "./vocab.json",
+  2: "./vocab_level2.json",
+  3: "./vocab_level3.json"
+};
+
+let currentLevel = 1;
+
 // 偏り制御のパラメータ
 const RECENT_PENALTY_HOURS = 24;     // 直近24時間に出た単語は出にくくする
 const NEW_ITEM_BONUS = 3.0;          // 未出題ボーナス
@@ -378,33 +386,63 @@ function startRound(){
   nextItem();
 }
 
+async function loadLevel(level){
+  const file = LEVEL_FILES[level];
+  if(!file) return;
+
+  const res = await fetch(file, { cache: "no-store" });
+  const data = await res.json();
+
+  state.vocab = data.items;   // ← items 形式で統一
+  currentLevel = level;
+}
+
 async function init(){
+  // statsを使っている場合（偏り制御/SRS）
   state.stats = loadStats();
 
-  const res = await fetch("./vocab.json", { cache: "no-store" });
-  const data = await res.json();
-  state.vocab = data.items;
-
-  $("btnNext").addEventListener("click", () => {
+  // 1) 初期レベルをロード（Level 1）
+  await loadLevel(1);
   $("btnNext").disabled = true;
+  startRound();
 
-$("btnNext").disabled = true;
+  // 2) レベルボタンのイベント
+  document.querySelectorAll(".lvlBtn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const level = Number(btn.dataset.level);
 
-  // Phase1で正解したあと（state.phase が article になっている）なら、
-  // 次は「同じ単語のPhase2」を表示する
-  if (state.phase === "article" && state.phase2Shown === false && state.done < state.target) {
-    state.phase2Shown = true;
-    render();     // ← ここでPhase2画面に切り替わる
-    return;
-  }
+      // 見た目（active切替）
+      document.querySelectorAll(".lvlBtn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
 
-  // それ以外は次の問題へ
-  nextItem();
-});
+      // データを切替 → ラウンド再開始
+      await loadLevel(level);
+      startRound();
+    });
+  });
 
+  // 3) Next（あなたの phase2Shown 方式に対応）
+  $("btnNext").addEventListener("click", () => {
+    $("btnNext").disabled = true;
+
+    // Phase1正解後 → Phase2へ（同じ単語）
+    if (state.phase === "article" && state.phase2Shown === false && state.done < state.target) {
+      state.phase2Shown = true;
+      render();
+      return;
+    }
+
+    // それ以外 → 次の問題
+    nextItem();
+  });
+
+  // 4) Restart（現在のレベルのまま再スタート）
   $("btnRestart").addEventListener("click", () => startRound());
 
+  // 5) 開始
   startRound();
 }
 
 init();
+
+

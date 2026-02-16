@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "level": 3,
+  "items": [
+    {
+      "id": "l3_n_wettervorhersage",
+      "type": "noun",
+      "lemma": "Wettervorhersage",
+      "article": "die",
+      "display": "die Wettervorhersage",
+      "clues_de": [
+        "Sie sagt, wie das Wetter in den nächsten Tagen wird, zum Beispiel Regen oder Sonne. Man nutzt sie, um Kleidung und Pläne besser zu entscheiden."
+      ],
+      "tags": ["nature", "weather"],
+      "difficulty": 5
+    },
+    {
+      "id": "l3_n_muellsortierung",
+      "type": "noun",
+      "lemma": "Müllsortierung",
+      "article": "die",
+      "display": "die Müllsortierung",
+      "clues_de": [
+        "Dabei trennt man Abfall in verschiedene Arten, zum Beispiel Papier, Plastik und Bioabfall. So kann mehr recycelt werden und weniger Müll wird verbrannt."
+      ],
+      "tags": ["home", "nature"],
+      "difficulty": 5
+    },
+    {
+      "id": "l3_n_versicherung",
+      "type": "noun",
+      "lemma": "Versicherung",
+      "article": "die",
+      "display": "die Versicherung",
+      "clues_de": [
+        "Sie hilft, Kosten zu bezahlen, wenn etwas passiert, zum Beispiel bei Krankheit oder einem Unfall. Dafür zahlt man regelmäßig Geld, das nennt man Beitrag."
+      ],
+      "tags": ["city", "health"],
+      "difficulty": 5
+    }
+  ]
+}

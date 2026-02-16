@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "level": 2,
+  "items": [
+    {
+      "id": "l2_n_steckdose",
+      "type": "noun",
+      "lemma": "Steckdose",
+      "article": "die",
+      "display": "die Steckdose",
+      "clues_de": [
+        "Hier steckt man einen Stecker ein, damit ein Gerät Strom bekommt. Man findet sie meistens an der Wand in jedem Zimmer."
+      ],
+      "tags": ["home", "tech"],
+      "difficulty": 3
+    },
+    {
+      "id": "l2_n_quittung",
+      "type": "noun",
+      "lemma": "Quittung",
+      "article": "die",
+      "display": "die Quittung",
+      "clues_de": [
+        "Man bekommt sie nach dem Bezahlen als Beweis. Darauf stehen oft Datum, Preis und die gekauften Dinge."
+      ],
+      "tags": ["city"],
+      "difficulty": 3
+    },
+    {
+      "id": "l2_n_termin",
+      "type": "noun",
+      "lemma": "Termin",
+      "article": "der",
+      "display": "der Termin",
+      "clues_de": [
+        "Das ist eine feste Zeit, zu der man irgendwo sein soll, zum Beispiel beim Arzt. Man schreibt ihn oft in den Kalender."
+      ],
+      "tags": ["city", "health"],
+      "difficulty": 3
+    }
+  ]
+}
