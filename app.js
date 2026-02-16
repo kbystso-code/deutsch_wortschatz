@@ -207,9 +207,17 @@ function render(){
 
   // clueは「1問の間」固定
   if(!state.currentClue){
-    state.currentClue = item.clues_de[Math.floor(Math.random() * item.clues_de.length)];
+    const clues = Array.isArray(item.clues_de) ? item.clues_de : (item.clues_de ? [item.clues_de] : null);
+    state.currentClue = (item.clue ?? (clues ? clues[Math.floor(Math.random() * clues.length)] : "…"));
   }
-  $("clueText").textContent = state.currentClue;
+  const clue =
+  state.current?.clue
+  ?? (Array.isArray(state.current?.clues_de) ? state.current.clues_de[0] : state.current?.clues_de)
+  ?? state.currentClue
+  ?? "…";
+
+$("clueText").textContent = clue;
+
 
   $("wordReveal").style.display = (state.phase === "article") ? "block" : "none";
   // 冠詞フェーズでは冠詞を見せない（lemmaのみ）
@@ -390,12 +398,19 @@ async function loadLevel(level){
   const file = LEVEL_FILES[level];
   if(!file) return;
 
-  const res = await fetch(file, { cache: "no-store" });
-  const data = await res.json();
+  console.log("[loadLevel] level =", level, "file =", file);
 
-  state.vocab = data.items;   // ← items 形式で統一
+  const res = await fetch(file, { cache: "no-store" });
+  console.log("[loadLevel] fetch status =", res.status, res.statusText);
+
+  const data = await res.json();
+  console.log("[loadLevel] items length =", data?.items?.length);
+  console.log("[loadLevel] first item =", data?.items?.[0]);
+
+  state.vocab = data.items;
   currentLevel = level;
 }
+
 
 async function init(){
   // statsを使っている場合（偏り制御/SRS）
