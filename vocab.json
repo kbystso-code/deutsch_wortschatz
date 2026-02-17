@@ -55,14 +55,14 @@
       "lemma": "Schlüssel",
       "article": "der",
       "display": "der Schlüssel",
-      "clue": "Damit kann man eine Tür oder ein Schloss öffnen. Man trägt ihn oft in der Tasche oder am Schlüsselbund."
+      "clue": "Damit kann man eine Tür oder ein Schloss öffnen. Man trägt ihn oft in der Tasche oder an einem kleinen Ring."
     },
     {
       "id": "n_uhr",
       "lemma": "Uhr",
       "article": "die",
       "display": "die Uhr",
-      "clue": "Sie zeigt die Zeit, zum Beispiel Stunden und Minuten. Man findet sie als Armbanduhr oder an der Wand."
+      "clue": "Sie zeigt die Zeit, zum Beispiel Stunden und Minuten. Man trägt sie am Handgelenk oder hängt sie an die Wand."
     },
     {
       "id": "n_spiegel",
@@ -160,7 +160,7 @@
       "lemma": "Orange",
       "article": "die",
       "display": "die Orange",
-      "clue": "Eine runde Frucht mit dicker Schale und viel Saft. Man schält sie oder presst sie für Orangensaft."
+      "clue": "Eine runde Frucht mit dicker Schale und viel Saft. Man schält sie oder presst sie, um Saft zu machen."
     },
     {
       "id": "n_gemuese",
@@ -307,7 +307,7 @@
       "lemma": "Stift",
       "article": "der",
       "display": "der Stift",
-      "clue": "Damit schreibt man Wörter und Sätze auf Papier. Es gibt viele Arten, zum Beispiel Kugelschreiber oder Filzstifte."
+      "clue": "Damit schreibt man Wörter und Sätze auf Papier. Es gibt viele Arten, zum Beispiel Kugelschreiber oder Marker."
     },
     {
       "id": "n_lineal",
@@ -335,7 +335,7 @@
       "lemma": "Straße",
       "article": "die",
       "display": "die Straße",
-      "clue": "Autos, Busse und Fahrräder fahren hier entlang. Man geht auch auf dem Gehweg neben der Straße."
+      "clue": "Autos, Busse und Fahrräder fahren hier entlang. Daneben gibt es oft einen Gehweg für Fußgänger."
     },
     {
       "id": "n_ampel",
@@ -356,7 +356,7 @@
       "lemma": "Zug",
       "article": "der",
       "display": "der Zug",
-      "clue": "Er fährt auf Schienen und bringt Menschen in andere Städte. Im Zug gibt es Waggons und Sitzplätze."
+      "clue": "Er fährt auf Schienen und bringt Menschen in andere Städte. Innen gibt es Waggons und Sitzplätze."
     },
     {
       "id": "n_bus",
@@ -377,14 +377,14 @@
       "lemma": "Sonne",
       "article": "die",
       "display": "die Sonne",
-      "clue": "Sie ist am Himmel und macht es warm und hell. Ohne Sonne könnten Pflanzen nicht gut wachsen."
+      "clue": "Sie ist am Himmel und macht es warm und hell. Ohne sie könnten Pflanzen nicht gut wachsen."
     },
     {
       "id": "n_regen",
       "lemma": "Regen",
       "article": "der",
       "display": "der Regen",
-      "clue": "Wasser fällt aus den Wolken auf die Erde. Man nimmt oft einen Regenschirm mit, wenn es regnet."
+      "clue": "Wasser fällt aus den Wolken auf die Erde. Man nimmt oft einen Schirm mit, wenn es draußen nass ist."
     },
     {
       "id": "n_wald",
@@ -412,21 +412,21 @@
       "lemma": "Haushalt",
       "article": "der",
       "display": "der Haushalt",
-      "clue": "Damit meint man alles, was zu Hause organisiert wird, zum Beispiel putzen und einkaufen. In einem Haushalt leben oft mehrere Personen zusammen."
+      "clue": "Damit meint man alles, was zu Hause organisiert wird, zum Beispiel putzen und einkaufen. Oft teilen sich mehrere Personen diese Aufgaben."
     },
     {
       "id": "n_reparatur",
       "lemma": "Reparatur",
       "article": "die",
       "display": "die Reparatur",
-      "clue": "Wenn etwas kaputt ist, macht man es wieder ganz oder funktionsfähig. Eine Reparatur kann Geld kosten und manchmal dauert sie einige Tage."
+      "clue": "Wenn etwas kaputt ist, macht man es wieder ganz oder funktionsfähig. Das kann Geld kosten und manchmal dauert es einige Tage."
     },
     {
       "id": "n_werkzeug",
       "lemma": "Werkzeug",
       "article": "das",
       "display": "das Werkzeug",
-      "clue": "Damit baut oder repariert man Dinge, zum Beispiel mit einem Hammer oder Schraubenzieher. Werkzeug liegt oft in einer Kiste oder im Keller."
+      "clue": "Damit baut oder repariert man Dinge, zum Beispiel mit einem Hammer oder Schraubenzieher. Es liegt oft in einer Kiste oder im Keller."
     },
     {
       "id": "n_steckdose",
@@ -440,7 +440,7 @@
       "lemma": "Kabel",
       "article": "das",
       "display": "das Kabel",
-      "clue": "Es verbindet Geräte miteinander oder liefert Strom. Ein Kabel kann lang oder kurz sein und hat oft einen Stecker am Ende."
+      "clue": "Es verbindet Geräte miteinander oder liefert Strom. Es kann lang oder kurz sein und hat oft einen Stecker am Ende."
     },
     {
       "id": "n_bildschirm",
@@ -468,28 +468,28 @@
       "lemma": "Update",
       "article": "das",
       "display": "das Update",
-      "clue": "Damit wird eine Software auf den neuesten Stand gebracht. Ein Update kann Fehler beheben und neue Funktionen bringen."
+      "clue": "Damit wird eine Software auf den neuesten Stand gebracht. So können Fehler behoben werden und neue Funktionen kommen dazu."
     },
     {
       "id": "n_passwort",
       "lemma": "Passwort",
       "article": "das",
       "display": "das Passwort",
-      "clue": "Damit schützt man ein Konto oder ein Gerät vor fremdem Zugriff. Ein gutes Passwort ist lang und nicht leicht zu erraten."
+      "clue": "Damit schützt man ein Konto oder ein Gerät vor fremdem Zugriff. Es sollte lang sein und nicht leicht zu erraten."
     },
     {
       "id": "n_nachricht",
       "lemma": "Nachricht",
       "article": "die",
       "display": "die Nachricht",
-      "clue": "Man schickt sie per Handy oder liest sie in den Medien. Eine Nachricht kann Informationen, Fragen oder Neuigkeiten enthalten."
+      "clue": "Man schickt sie per Handy oder liest sie in den Medien. Sie kann Informationen, Fragen oder Neuigkeiten enthalten."
     },
     {
       "id": "n_termin",
       "lemma": "Termin",
       "article": "der",
       "display": "der Termin",
-      "clue": "Das ist eine feste Zeit, zu der man irgendwo sein soll, zum Beispiel beim Arzt. Man schreibt einen Termin oft in den Kalender."
+      "clue": "Das ist eine feste Zeit, zu der man irgendwo sein soll, zum Beispiel beim Arzt. Man trägt so etwas oft in den Kalender ein."
     },
     {
       "id": "n_kalender",
@@ -503,35 +503,35 @@
       "lemma": "Quittung",
       "article": "die",
       "display": "die Quittung",
-      "clue": "Man bekommt sie nach dem Bezahlen als Beweis. Auf der Quittung stehen oft Datum, Preis und gekaufte Dinge."
+      "clue": "Man bekommt sie nach dem Bezahlen als Beweis. Darauf stehen oft Datum, Preis und gekaufte Dinge."
     },
     {
       "id": "n_rechnung",
       "lemma": "Rechnung",
       "article": "die",
       "display": "die Rechnung",
-      "clue": "Sie zeigt, wie viel man bezahlen muss, zum Beispiel für eine Dienstleistung. Man bekommt eine Rechnung oft per Post oder per E-Mail."
+      "clue": "Sie zeigt, wie viel man bezahlen muss, zum Beispiel für eine Dienstleistung. Man bekommt sie oft per Post oder per E-Mail."
     },
     {
       "id": "n_preis",
       "lemma": "Preis",
       "article": "der",
       "display": "der Preis",
-      "clue": "Er zeigt, wie viel etwas kostet, zum Beispiel im Supermarkt. Man vergleicht Preise, wenn man sparen möchte."
+      "clue": "Er zeigt, wie viel etwas kostet, zum Beispiel im Supermarkt. Man vergleicht Zahlen, wenn man sparen möchte."
     },
     {
       "id": "n_rabatt",
       "lemma": "Rabatt",
       "article": "der",
       "display": "der Rabatt",
-      "clue": "Das ist ein Preisnachlass, wenn etwas billiger verkauft wird. Man bekommt Rabatt oft bei Angeboten oder mit einer Karte."
+      "clue": "Das ist ein Preisnachlass, wenn etwas billiger verkauft wird. Man bekommt so etwas oft bei Angeboten oder mit einer Karte."
     },
     {
       "id": "n_angebot",
       "lemma": "Angebot",
       "article": "das",
       "display": "das Angebot",
-      "clue": "So nennt man etwas, das gerade günstiger oder besonders empfohlen ist. Ein Angebot gilt oft nur für kurze Zeit."
+      "clue": "So nennt man etwas, das gerade günstiger oder besonders empfohlen ist. Es gilt oft nur für kurze Zeit."
     },
     {
       "id": "n_supermarkt",
@@ -545,63 +545,63 @@
       "lemma": "Kasse",
       "article": "die",
       "display": "die Kasse",
-      "clue": "Dort bezahlt man im Geschäft und bekommt manchmal eine Quittung. An der Kasse steht oft eine Schlange."
+      "clue": "Dort bezahlt man im Geschäft und bekommt manchmal eine Quittung. Dort steht oft eine Schlange."
     },
     {
       "id": "n_kunde",
       "lemma": "Kunde",
       "article": "der",
       "display": "der Kunde",
-      "clue": "So nennt man eine Person, die etwas kauft oder eine Dienstleistung nutzt. Ein Kunde kann Fragen stellen und Hilfe bekommen."
+      "clue": "So nennt man eine Person, die etwas kauft oder eine Dienstleistung nutzt. Diese Person kann Fragen stellen und Hilfe bekommen."
     },
     {
       "id": "n_service",
       "lemma": "Service",
       "article": "der",
       "display": "der Service",
-      "clue": "Damit meint man Hilfe oder Unterstützung, zum Beispiel im Geschäft oder Restaurant. Guter Service bedeutet, dass man freundlich und schnell hilft."
+      "clue": "Damit meint man Hilfe oder Unterstützung, zum Beispiel im Geschäft oder Restaurant. Es ist gut, wenn man freundlich und schnell hilft."
     },
     {
       "id": "n_ausweis",
       "lemma": "Ausweis",
       "article": "der",
       "display": "der Ausweis",
-      "clue": "Damit kann man zeigen, wer man ist, zum Beispiel bei einer Kontrolle. Ein Ausweis enthält Name, Foto und Geburtsdatum."
+      "clue": "Damit kann man zeigen, wer man ist, zum Beispiel bei einer Kontrolle. Darin stehen Name, Foto und Geburtsdatum."
     },
     {
       "id": "n_erlaubnis",
       "lemma": "Erlaubnis",
       "article": "die",
       "display": "die Erlaubnis",
-      "clue": "Das ist ein Ja, dass man etwas tun darf, zum Beispiel von Eltern oder Lehrern. Man braucht manchmal eine Erlaubnis für besondere Dinge."
+      "clue": "Das ist ein Ja, dass man etwas tun darf, zum Beispiel von Eltern oder Lehrern. Man braucht das manchmal für besondere Dinge."
     },
     {
       "id": "n_regel",
       "lemma": "Regel",
       "article": "die",
       "display": "die Regel",
-      "clue": "Sie sagt, was erlaubt ist und was nicht, damit alles fair und sicher bleibt. In der Schule und im Sport gibt es viele Regeln."
+      "clue": "Sie sagt, was erlaubt ist und was nicht, damit alles fair und sicher bleibt. In der Schule und im Sport gibt es viele davon."
     },
     {
       "id": "n_aufgabe",
       "lemma": "Aufgabe",
       "article": "die",
       "display": "die Aufgabe",
-      "clue": "Das ist etwas, das man erledigen soll, zum Beispiel in Mathe oder im Haushalt. Eine Aufgabe kann leicht sein oder viel Denken brauchen."
+      "clue": "Das ist etwas, das man erledigen soll, zum Beispiel in Mathe oder zu Hause. Es kann leicht sein oder viel Denken brauchen."
     },
     {
       "id": "n_loesung",
       "lemma": "Lösung",
       "article": "die",
       "display": "die Lösung",
-      "clue": "So nennt man die richtige Antwort oder den Weg zum Ergebnis. Man schreibt die Lösung oft unter die Aufgabe."
+      "clue": "So nennt man die richtige Antwort oder den Weg zum Ergebnis. Man schreibt sie oft unter die Aufgabe."
     },
     {
       "id": "n_notiz",
       "lemma": "Notiz",
       "article": "die",
       "display": "die Notiz",
-      "clue": "Das ist ein kurzer Text, den man sich merkt, zum Beispiel eine Idee oder ein Termin. Man schreibt Notizen in ein Heft oder aufs Handy."
+      "clue": "Das ist ein kurzer Text, den man sich merkt, zum Beispiel eine Idee oder ein Termin. Man schreibt so etwas in ein Heft oder aufs Handy."
     },
     {
       "id": "n_vortrag",
@@ -615,7 +615,7 @@
       "lemma": "Gruppe",
       "article": "die",
       "display": "die Gruppe",
-      "clue": "Das sind mehrere Personen, die zusammen etwas machen, zum Beispiel ein Projekt. In einer Gruppe teilt man Aufgaben und hilft sich."
+      "clue": "Das sind mehrere Personen, die zusammen etwas machen, zum Beispiel ein Projekt. Dabei teilt man Aufgaben und hilft sich."
     },
     {
       "id": "n_projekt",
@@ -629,14 +629,14 @@
       "lemma": "Umwelt",
       "article": "die",
       "display": "die Umwelt",
-      "clue": "Damit meint man Natur und Umgebung, in der Menschen und Tiere leben. Man schützt die Umwelt, indem man Müll vermeidet und Energie spart."
+      "clue": "Damit meint man Natur und Umgebung, in der Menschen und Tiere leben. Man schützt sie, indem man Müll vermeidet und Energie spart."
     },
     {
       "id": "n_muellsack",
       "lemma": "Müllsack",
       "article": "der",
       "display": "der Müllsack",
-      "clue": "Darin sammelt man Abfall, bevor man ihn wegwirft. Ein Müllsack kann voll werden und muss dann in die Tonne."
+      "clue": "Darin sammelt man Abfall, bevor man ihn wegwirft. Er kann voll werden und muss dann in die Tonne."
     },
     {
       "id": "n_muellsortierung",
@@ -650,21 +650,21 @@
       "lemma": "Recycling",
       "article": "das",
       "display": "das Recycling",
-      "clue": "Dabei werden alte Materialien wiederverwendet, zum Beispiel Papier oder Glas. Recycling spart Rohstoffe und hilft der Umwelt."
+      "clue": "Dabei werden alte Materialien wiederverwendet, zum Beispiel Papier oder Glas. Das spart Rohstoffe und hilft der Umwelt."
     },
     {
       "id": "n_energie",
       "lemma": "Energie",
       "article": "die",
       "display": "die Energie",
-      "clue": "Man braucht sie für Licht, Heizung und Geräte im Alltag. Energie kann aus Sonne, Wind oder anderen Quellen kommen."
+      "clue": "Man braucht sie für Licht, Heizung und Geräte im Alltag. Sie kann aus Sonne, Wind oder anderen Quellen kommen."
     },
     {
       "id": "n_strom",
       "lemma": "Strom",
       "article": "der",
       "display": "der Strom",
-      "clue": "Er bringt Energie zu Lampen und Geräten, damit sie funktionieren. Wenn der Strom ausfällt, geht oft das Licht aus."
+      "clue": "Er bringt elektrische Kraft zu Lampen und Geräten, damit sie funktionieren. Wenn die Versorgung ausfällt, geht oft das Licht aus."
     },
     {
       "id": "n_wettervorhersage",
@@ -678,14 +678,14 @@
       "lemma": "Verkehr",
       "article": "der",
       "display": "der Verkehr",
-      "clue": "Damit meint man alle Autos, Busse und Fahrräder auf den Straßen. Wenn viel Verkehr ist, gibt es Stau und man kommt langsamer an."
+      "clue": "Damit meint man alle Autos, Busse und Fahrräder auf den Straßen. Wenn sehr viel los ist, kommt man oft langsamer an."
     },
     {
       "id": "n_stau",
       "lemma": "Stau",
       "article": "der",
       "display": "der Stau",
-      "clue": "Viele Autos stehen dann dicht hintereinander und fahren nur langsam. Ein Stau entsteht oft bei Unfällen oder Baustellen."
+      "clue": "Viele Autos stehen dann dicht hintereinander und fahren nur langsam. Das passiert oft bei Unfällen oder Baustellen."
     },
     {
       "id": "n_baustelle",
@@ -699,14 +699,14 @@
       "lemma": "Karte",
       "article": "die",
       "display": "die Karte",
-      "clue": "Sie zeigt Orte und Wege, damit man sich orientieren kann. Eine Karte kann auf Papier sein oder als App auf dem Handy."
+      "clue": "Sie zeigt Orte und Wege, damit man sich orientieren kann. Sie kann auf Papier sein oder als App auf dem Handy."
     },
     {
       "id": "n_navigation",
       "lemma": "Navigation",
       "article": "die",
       "display": "die Navigation",
-      "clue": "Damit findet man den richtigen Weg, zum Beispiel im Auto oder auf dem Handy. Eine Navigation sagt oft, wann man abbiegen soll."
+      "clue": "Damit findet man den richtigen Weg, zum Beispiel im Auto oder auf dem Handy. Eine Stimme sagt oft, wann man abbiegen soll."
     },
     {
       "id": "n_unfall",
@@ -734,21 +734,21 @@
       "lemma": "Medikament",
       "article": "das",
       "display": "das Medikament",
-      "clue": "Man nimmt es ein, damit es einem besser geht oder Schmerzen weniger werden. Ein Medikament kann als Tablette, Saft oder Salbe sein."
+      "clue": "Man nimmt es ein, damit es einem besser geht oder Schmerzen weniger werden. Es kann als Tablette, Tropfen oder Salbe sein."
     },
     {
       "id": "n_symptom",
       "lemma": "Symptom",
       "article": "das",
       "display": "das Symptom",
-      "clue": "So nennt man ein Zeichen, dass man krank sein könnte, zum Beispiel Fieber oder Husten. Ein Arzt fragt oft nach den Symptomen."
+      "clue": "So nennt man ein Zeichen, dass man krank sein könnte, zum Beispiel Husten oder Kopfschmerzen. Ein Arzt fragt oft nach solchen Zeichen."
     },
     {
       "id": "n_fieber",
       "lemma": "Fieber",
       "article": "das",
       "display": "das Fieber",
-      "clue": "Dabei ist die Körpertemperatur höher als normal und man fühlt sich oft schwach. Man misst Fieber mit einem Thermometer."
+      "clue": "Dabei ist die Körpertemperatur höher als normal und man fühlt sich oft schwach. Man misst das mit einem Thermometer."
     },
     {
       "id": "n_thermometer",
@@ -769,56 +769,56 @@
       "lemma": "Freizeit",
       "article": "die",
       "display": "die Freizeit",
-      "clue": "Das ist die Zeit, in der man nicht arbeitet oder zur Schule geht. In der Freizeit macht man Hobbys, Sport oder trifft Freunde."
+      "clue": "Das ist die Zeit, in der man nicht arbeitet oder zur Schule geht. Dann macht man Dinge, die Spaß machen, oder trifft Freunde."
     },
     {
       "id": "n_hobby",
       "lemma": "Hobby",
       "article": "das",
       "display": "das Hobby",
-      "clue": "Das ist etwas, das man gerne in der Freizeit macht, zum Beispiel Zeichnen oder Musik. Ein Hobby macht Spaß und man kann darin besser werden."
+      "clue": "Das ist etwas, das man gerne macht, wenn man Zeit hat, zum Beispiel Zeichnen oder Musik. Es macht Spaß und man kann darin besser werden."
     },
     {
       "id": "n_trainingsplan",
       "lemma": "Trainingsplan",
       "article": "der",
       "display": "der Trainingsplan",
-      "clue": "Darin steht, wann und wie man trainiert, zum Beispiel für Sport oder Fitness. Ein Trainingsplan hilft, Ziele Schritt für Schritt zu erreichen."
+      "clue": "Darin steht, wann und wie man trainiert, zum Beispiel für Sport oder Fitness. So kann man Ziele Schritt für Schritt erreichen."
     },
     {
       "id": "n_wettbewerb",
       "lemma": "Wettbewerb",
       "article": "der",
       "display": "der Wettbewerb",
-      "clue": "Dort treten Menschen gegeneinander an, um zu sehen, wer am besten ist. Ein Wettbewerb kann im Sport, in der Schule oder bei Musik stattfinden."
+      "clue": "Dort treten Menschen gegeneinander an, um zu sehen, wer am besten ist. Das kann im Sport, in der Schule oder bei Musik sein."
     },
     {
       "id": "n_verein",
       "lemma": "Verein",
       "article": "der",
       "display": "der Verein",
-      "clue": "Das ist eine Gruppe, die sich regelmäßig trifft, zum Beispiel für Sport oder Musik. In einem Verein gibt es oft Regeln, Trainingszeiten und Mitglieder."
+      "clue": "Das ist eine Gruppe, die sich regelmäßig trifft, zum Beispiel für Sport oder Musik. Es gibt oft Regeln, Zeiten zum Trainieren und Mitglieder."
     },
     {
       "id": "n_mitglied",
       "lemma": "Mitglied",
       "article": "das",
       "display": "das Mitglied",
-      "clue": "So nennt man eine Person, die zu einer Gruppe oder einem Verein gehört. Ein Mitglied kann Beiträge zahlen und bei Aktivitäten mitmachen."
+      "clue": "So nennt man eine Person, die zu einer Gruppe oder einem Klub gehört. Diese Person kann Beiträge zahlen und bei Aktivitäten mitmachen."
     },
     {
       "id": "n_erfahrung",
       "lemma": "Erfahrung",
       "article": "die",
       "display": "die Erfahrung",
-      "clue": "Das ist etwas, das man durch Erlebnisse und Übung lernt. Mit Erfahrung kann man Dinge oft besser und schneller machen."
+      "clue": "Das ist etwas, das man durch Erlebnisse und Übung lernt. Damit kann man Dinge oft besser und schneller machen."
     },
     {
       "id": "n_wohnung",
       "lemma": "Wohnung",
       "article": "die",
       "display": "die Wohnung",
-      "clue": "Darin wohnt man mit seiner Familie oder alleine. In einer Wohnung gibt es Zimmer wie Küche, Bad und Schlafzimmer."
+      "clue": "Darin wohnt man mit seiner Familie oder alleine. Es gibt Zimmer wie Küche, Bad und Schlafzimmer."
     },
     {
       "id": "n_balkon",
@@ -839,7 +839,7 @@
       "lemma": "Schublade",
       "article": "die",
       "display": "die Schublade",
-      "clue": "Man zieht sie heraus, um Dinge hineinzulegen oder herauszunehmen. In Schubladen sind oft Besteck, Stifte oder Socken."
+      "clue": "Man zieht sie heraus, um Dinge hineinzulegen oder herauszunehmen. Darin liegen oft Besteck, Socken oder Schreibzeug."
     },
     {
       "id": "n_muelleimer",
@@ -867,7 +867,7 @@
       "lemma": "Bürste",
       "article": "die",
       "display": "die Bürste",
-      "clue": "Damit bürstet man Haare oder reinigt etwas. Sie hat Borsten und liegt oft im Bad."
+      "clue": "Damit pflegt man Haare oder reinigt etwas. Sie hat Borsten und liegt oft im Bad."
     },
     {
       "id": "n_shampoo",
@@ -881,7 +881,7 @@
       "lemma": "Jacke",
       "article": "die",
       "display": "die Jacke",
-      "clue": "Man trägt sie draußen, wenn es kühl oder windig ist. Eine Jacke hat oft Taschen und einen Reißverschluss."
+      "clue": "Man trägt sie draußen, wenn es kühl oder windig ist. Sie hat oft Taschen und einen Reißverschluss."
     },
     {
       "id": "n_pullover",
@@ -895,7 +895,7 @@
       "lemma": "Hose",
       "article": "die",
       "display": "die Hose",
-      "clue": "Man trägt sie an den Beinen, zum Beispiel Jeans oder Sporthosen. Sie hat oft Taschen und einen Gürtel."
+      "clue": "Man trägt sie an den Beinen, zum Beispiel Jeans oder Leggings. Sie hat oft Taschen und einen Gürtel."
     },
     {
       "id": "n_rock",
@@ -923,7 +923,7 @@
       "lemma": "Schal",
       "article": "der",
       "display": "der Schal",
-      "clue": "Man legt ihn um den Hals, wenn es draußen kalt ist. Ein Schal kann aus Wolle sein und ist oft weich."
+      "clue": "Man legt ihn um den Hals, wenn es draußen kalt ist. Er kann aus Wolle sein und ist oft weich."
     },
     {
       "id": "n_brille",
@@ -944,7 +944,7 @@
       "lemma": "Schwimmbad",
       "article": "das",
       "display": "das Schwimmbad",
-      "clue": "Dort kann man schwimmen und ins Wasser springen. Im Schwimmbad gibt es oft Umkleiden und Duschen."
+      "clue": "Dort kann man schwimmen und ins Wasser springen. Es gibt oft Umkleiden und Duschen."
     },
     {
       "id": "n_bibliothek",
@@ -986,7 +986,7 @@
       "lemma": "Mannschaft",
       "article": "die",
       "display": "die Mannschaft",
-      "clue": "Das ist eine Gruppe von Spielern, die zusammen spielt. Eine Mannschaft trainiert regelmäßig und hat oft einen Trainer."
+      "clue": "Das ist eine Gruppe von Spielern, die zusammen spielt. Sie trainiert regelmäßig und hat oft einen Trainer."
     },
     {
       "id": "n_eintrittskarte",
@@ -1000,7 +1000,7 @@
       "lemma": "Ferien",
       "article": "die",
       "display": "die Ferien",
-      "clue": "In dieser Zeit hat man keine Schule und kann sich erholen. Viele Familien machen in den Ferien einen Ausflug oder Urlaub."
+      "clue": "In dieser Zeit hat man keine Schule und kann sich erholen. Viele Familien machen dann einen Ausflug oder Urlaub."
     },
     {
       "id": "n_geburtstag",
@@ -1014,7 +1014,7 @@
       "lemma": "Einladung",
       "article": "die",
       "display": "die Einladung",
-      "clue": "Damit bittet man jemanden zu einer Feier oder zu Besuch. Eine Einladung kann als Karte oder Nachricht kommen."
+      "clue": "Damit bittet man jemanden zu einer Feier oder zu Besuch. Sie kann als Karte oder Nachricht kommen."
     },
     {
       "id": "n_geschenk",
@@ -1028,7 +1028,7 @@
       "lemma": "Brief",
       "article": "der",
       "display": "der Brief",
-      "clue": "Das ist eine Nachricht auf Papier, die man per Post verschickt. Man schreibt einen Brief und steckt ihn in einen Umschlag."
+      "clue": "Das ist eine Nachricht auf Papier, die man per Post verschickt. Man schreibt sie und steckt sie in einen Umschlag."
     },
     {
       "id": "n_briefmarke",
@@ -1042,7 +1042,7 @@
       "lemma": "Post",
       "article": "die",
       "display": "die Post",
-      "clue": "Sie bringt Briefe und Pakete zu den Menschen. Man kann bei der Post auch Dinge verschicken oder abholen."
+      "clue": "Sie bringt Briefe und Pakete zu den Menschen. Man kann dort auch Dinge verschicken oder abholen."
     },
     {
       "id": "n_paket",
