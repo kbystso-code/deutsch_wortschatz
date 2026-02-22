@@ -165,3 +165,77 @@ body{
   background: rgba(32,52,93,0.70);
   color: var(--text);
 }
+
+/* Launcher button (back to home) */
+.launcherBtn{
+  margin-left: auto;           /* topbarがflexなら右寄せに効く */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* topbarがgrid等で margin-left:auto が効かない場合の保険 */
+.topbar .launcherBtn{
+  justify-self: end;
+}
+
+.launcherBtn:active{
+  transform: translateY(1px);
+}
+
+/* --- Topbar layout: 2 rows --- */
+.topbar{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* 2nd row: launcher + levels + stats */
+.topActions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;      /* 画面が狭い時は折り返す */
+}
+
+/* launcherは左寄せ、statsは右に寄せる */
+.topActions .stats{
+  margin-left: auto;
+}
+
+/* 既存の right寄せ保険は不要になるので、あれば残してもOK */
+
+/* --- Topbar layout: Row1 brand + launcher, Row2 levels + stats --- */
+.topbar{
+  display: grid;
+  grid-template-columns: 1fr auto; /* 左：brand / 右：launcher */
+  grid-template-rows: auto auto;   /* 2段 */
+  gap: 10px;
+  align-items: center;
+}
+
+/* 配置 */
+.topbar .brand{ grid-column: 1; grid-row: 1; }
+.topbar .launcherTop{ grid-column: 2; grid-row: 1; justify-self: end; }
+.topbar .topActions{ grid-column: 1 / -1; grid-row: 2; }
+
+/* 2段目（level + stats） */
+.topActions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topActions .stats{
+  margin-left: auto; /* 右寄せ */
+}
