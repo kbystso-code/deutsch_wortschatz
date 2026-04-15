@@ -24,6 +24,7 @@ const state = {
   target: TARGET_SETS,
   done: 0,
   score: 0,
+  correctCount: 0,
   streak: 0,
   phase: "meaning",
   queue: [],
@@ -33,6 +34,9 @@ const state = {
   phase2Shown: false,
   currentClue: ""     // 1問中はclueを固定
 };
+
+const KIDS_APP_PROGRESS_KEY = "kids-app-study-progress-v1";
+const KIDS_APP_APP_ID = "wortschatz";
 
 function shuffle(arr){
   const a = arr.slice();
@@ -297,6 +301,7 @@ function onMeaningAnswer(choice){
   recordResult(state.current.id, "meaning", correct);
 
   if (correct) {
+  state.correctCount += 1;
   state.score += 2;
   state.streak += 1;
   $("feedback").textContent = `✅ Richtig: ${state.current.display}`;
@@ -320,6 +325,8 @@ function onMeaningAnswer(choice){
     $("btnNext").disabled = false;
     state.lock = false;
   }
+
+  reportKidsAppProgress(state.correctCount);
 }
 
 function onArticleAnswer(article){
@@ -331,6 +338,7 @@ function onArticleAnswer(article){
   recordResult(state.current.id, "article", correct);
 
   if(correct){
+    state.correctCount += 1;
     state.score += 2;
     state.streak += 1;
     $("feedback").textContent = `✅ Richtig: ${state.current.display}`;
@@ -351,6 +359,8 @@ function onArticleAnswer(article){
     $("btnNext").disabled = false;
     state.lock = false;
   }
+
+  reportKidsAppProgress(state.correctCount);
 }
 
 function nextItem(){
@@ -388,10 +398,36 @@ function buildRoundQueue(){
 function startRound(){
   state.done = 0;
   state.score = 0;
+  state.correctCount = 0;
   state.streak = 0;
   state.phase = "meaning";
   state.queue = buildRoundQueue();
+  reportKidsAppProgress(state.correctCount);
   nextItem();
+}
+
+function getKidsAppTodayKey(){
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function reportKidsAppProgress(correctCount){
+  try{
+    const today = getKidsAppTodayKey();
+    const raw = JSON.parse(localStorage.getItem(KIDS_APP_PROGRESS_KEY) || "{}");
+    raw[today] ??= {};
+
+    const prev = Number(raw[today][KIDS_APP_APP_ID]?.correct) || 0;
+    raw[today][KIDS_APP_APP_ID] = {
+      correct: Math.max(prev, Math.max(0, Math.floor(Number(correctCount) || 0))),
+      updatedAt: new Date().toISOString()
+    };
+
+    localStorage.setItem(KIDS_APP_PROGRESS_KEY, JSON.stringify(raw));
+  } catch {}
 }
 
 async function loadLevel(level){
